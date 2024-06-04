@@ -8,12 +8,12 @@ const pageTitle = "Home";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <section class="section is-medium">
+  <section class="section has-text-centered">
     <h1 class="title">Christina and Sean</h1>
     <p class="subtitle">A little helper guide for our upcoming wedding dinner celebration.</p>
   </section>
 
-  <section class="section">
+  <section class="section has-text-centered">
     <Countdown />
   </section>
 
@@ -23,7 +23,7 @@ const pageTitle = "Home";
     </div>
   </section>
 
-  <section>
+  <section class="section">
     <div class="columns is-centered">
       <div class="column is-half">
         <div class="card">
@@ -69,27 +69,22 @@ const pageTitle = "Home";
     </div>
   </section>
 
-  <section class="hero">
-    <div class="hero-body">
-      <p class="title">Logistics</p>
-      <p class="subtitle">...</p>
-      <Map 
-        latitude={36.12208136325429}
-        longitude={-115.16943833966151}
-        zoom={15}
-        tileLayer='https://tile.openstreetmap.org/36.12208136325429/-115.16943833966151/15.png'
-        container="leaflet-map"
-        tileLayer="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution="© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors"
-        containerstyle="width: 100%; height: 60vh"
-      />
-    </div>
+  <section class="section has-text-centered">
+    <p class="title">Logistics</p>
+    <Map 
+      latitude={36.12208136325429}
+      longitude={-115.16943833966151}
+      zoom={15}
+      tileLayer='https://tile.openstreetmap.org/36.12208136325429/-115.16943833966151/15.png'
+      container="leaflet-map"
+      tileLayer="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      attribution="© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors"
+      containerstyle="width: 100%; height: 60vh"
+    />
   </section>
 
-  <section>
-    <div class="hero-body">
-      <p class="title">Contact</p>
-      <Contact />
-    </div>
+  <section class="section has-text-centered">
+    <p class="title">Contact</p>
+    <Contact />
   </section>
 </BaseLayout>
