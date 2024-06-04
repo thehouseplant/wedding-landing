@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Map from '../components/Map.astro';
+import Contact from '../components/Contact.astro';
 const pageTitle = "Home";
 ---
 
@@ -70,6 +71,13 @@ const pageTitle = "Home";
         attribution="© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors"
         containerstyle="width: 100%; height: 60vh"
       />
+    </div>
+  </section>
+
+  <section>
+    <div class="hero-body">
+      <p class="title">Contact</p>
+      <Contact />
     </div>
   </section>
 </BaseLayout>
