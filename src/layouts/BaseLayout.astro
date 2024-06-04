@@ -1,5 +1,6 @@
 ---
 import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
 const { pageTitle } = Astro.props;
 ---
 
@@ -20,6 +21,8 @@ const { pageTitle } = Astro.props;
         <slot />
       </div>
     </div>
+    <Footer />
+
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         // Get all "navbar-burger" elements
@@ -28,7 +31,6 @@ const { pageTitle } = Astro.props;
         // Add a click event on each of them
         $navbarBurgers.forEach( el => {
           el.addEventListener('click', () => {
-
             // Get the target from the "data-target" attribute
             const target = el.dataset.target;
             const $target = document.getElementById(target);
@@ -36,7 +38,6 @@ const { pageTitle } = Astro.props;
             // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
             el.classList.toggle('is-active');
             $target.classList.toggle('is-active');
-
           });
         });
       });
