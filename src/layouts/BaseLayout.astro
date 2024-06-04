@@ -1,5 +1,4 @@
 ---
-import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 const { pageTitle } = Astro.props;
 ---
@@ -15,7 +14,6 @@ const { pageTitle } = Astro.props;
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
 	</head>
 	<body>
-    <Navbar />
     <div class="container">
       <div class="content">
         <slot />
