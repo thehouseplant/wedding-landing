@@ -69,16 +69,93 @@
 
 
 <h3>Entrees</h3>
-<p>Charbroiled Filet Mignon 10 oz.</p>
-<p>Chicken Roulade</p>
-<p>USDA Prime New York Strip 16 oz.</p>
+<p><a class="js-modal-trigger-5" data-target="modal-5">Charbroiled Filet Mignon 10 oz.</a></p>
+<div id="modal-5" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image is-4by3">
+      <img
+        src="https://d1t295ks1d26ah.cloudfront.net/media/pictures/files/000/030/650/xlarge_desktop/Smith___Wollensky_Steakhous6.jpg"
+        alt="Charbroiled Filet Mignon 10 oz."
+      />
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<p><a class="js-modal-trigger-6" data-target="modal-6">Chicken Roulade</a></p>
+<div id="modal-6" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image is-4by3">
+      <img
+        src="https://i0.wp.com/www.wrightfamilytable.com/wp-content/uploads/2016/05/Chicken-Roulades-2-1.jpg"
+        alt="Chicken Roulade"
+      />
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<p><a class="js-modal-trigger-7" data-target="modal-7">USDA Prime New York Strip 16 oz.</a></p>
+<div id="modal-7" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image is-4by3">
+      <img
+        src="https://d1t295ks1d26ah.cloudfront.net/media/pictures/files/000/007/840/xlarge_desktop/a4.jpg"
+        alt="USDA Prime New York Strip 16 oz."
+      />
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
 
 <h3>Sides</h3>
-<p>Sauteed Asparagus</p>
-<p>Whipped Potatoes</p>
+<p><a class="js-modal-trigger-8" data-target="modal-8">Sauteed Asparagus</a></p>
+<div id="modal-8" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image is-4by3">
+      <img
+        src="https://hips.hearstapps.com/hmg-prod/images/sauteed-asparagus-recipe-2-1646405904.jpg"
+        alt="Sauteed Asparagus"
+      />
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<p><a class="js-modal-trigger-9" data-target="modal-9">Whipped Potatoes</a></p>
+<div id="modal-9" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image is-4by3">
+      <img
+        src="https://www.thedailymeal.com/img/gallery/14-steakhouse-chains-with-the-best-mashed-potatoes/intro-1712092096.jpg"
+        alt="Whipped Potatoes"
+      />
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
 
 <h3>Dessert</h3>
-<p>Chocolate Cake</p>
+<p><a class="js-modal-trigger-10" data-target="modal-10">Chocolate Cake</a></p>
+<div id="modal-10" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image is-4by3">
+      <img
+        src="https://restaurantweeklv.org/wp-content/uploads/2023/04/Chocolate-Cake.jpg"
+        alt="Chocolate Cake"
+      />
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
@@ -126,6 +203,60 @@
     });
 
     (document.querySelectorAll('.js-modal-trigger-4') || []).forEach(($trigger) => {
+      const modal = $trigger.dataset.target;
+      const $target = document.getElementById(modal);
+
+      $trigger.addEventListener('click', () => {
+        openModal($target);
+      });
+    });
+
+    (document.querySelectorAll('.js-modal-trigger-5') || []).forEach(($trigger) => {
+      const modal = $trigger.dataset.target;
+      const $target = document.getElementById(modal);
+
+      $trigger.addEventListener('click', () => {
+        openModal($target);
+      });
+    });
+
+    (document.querySelectorAll('.js-modal-trigger-6') || []).forEach(($trigger) => {
+      const modal = $trigger.dataset.target;
+      const $target = document.getElementById(modal);
+
+      $trigger.addEventListener('click', () => {
+        openModal($target);
+      });
+    });
+
+    (document.querySelectorAll('.js-modal-trigger-7') || []).forEach(($trigger) => {
+      const modal = $trigger.dataset.target;
+      const $target = document.getElementById(modal);
+
+      $trigger.addEventListener('click', () => {
+        openModal($target);
+      });
+    });
+
+    (document.querySelectorAll('.js-modal-trigger-8') || []).forEach(($trigger) => {
+      const modal = $trigger.dataset.target;
+      const $target = document.getElementById(modal);
+
+      $trigger.addEventListener('click', () => {
+        openModal($target);
+      });
+    });
+
+    (document.querySelectorAll('.js-modal-trigger-9') || []).forEach(($trigger) => {
+      const modal = $trigger.dataset.target;
+      const $target = document.getElementById(modal);
+
+      $trigger.addEventListener('click', () => {
+        openModal($target);
+      });
+    });
+
+    (document.querySelectorAll('.js-modal-trigger-10') || []).forEach(($trigger) => {
       const modal = $trigger.dataset.target;
       const $target = document.getElementById(modal);
 
